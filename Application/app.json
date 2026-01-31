@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "sexGay",
-    "slug": "sexGay",
+    "name": "Application",
+    "slug": "Application",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "sexgay",
+    "scheme": "application",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
