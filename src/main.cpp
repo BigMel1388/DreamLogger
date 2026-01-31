@@ -76,7 +76,7 @@ void loop()
     lcd.print("hPa");
     delay(2000);
 
-    // Read and print CCS811 data
+    // Read and print CCS811 data to serial monitor because it looks cool
 
     if (ccs.available())
     {
@@ -93,7 +93,7 @@ void loop()
             Serial.println("Error reading sensor data");
         }
     }
-    // Read and print BME280 data
+    // Read and print BME280 data to serial monitor because it looks cool
     Serial.print("Temperature = ");
     Serial.print(bme.readTemperature());
     Serial.println(" °C");
