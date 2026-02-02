@@ -47,8 +47,7 @@ void loop()
     float pressure = bme.readPressure() / 100.0;             // hPa
     float altitude = bme.readAltitude(SEALEVELPRESSURE_HPA); // meters
     float carbonDioxide = ccs.geteCO2();                     // ppm
-    float totalVolatileOrganicCompounds = ccs.getTVOC();     // ppb
-                                                             // Display data on LCD
+    // Display data on LCD
     lcd.clear();
     lcd.setCursor(0, 0);
     lcd.print("Temp: ");
@@ -59,22 +58,17 @@ void loop()
     lcd.print(carbonDioxide);
     lcd.print("ppm");
     delay(2000);
+
     lcd.clear();
     lcd.setCursor(0, 0);
     lcd.print("Humidity: ");
     lcd.print(humidity);
     lcd.print("%");
     lcd.setCursor(0, 1);
-    lcd.print("tvo: ");
-    lcd.print(totalVolatileOrganicCompounds);
-    lcd.print("ppb");
-    delay(2000);
-    lcd.clear();
-    lcd.setCursor(0, 0);
     lcd.print("Pressure: ");
     lcd.print(pressure);
     lcd.print("hPa");
-    delay(2000);
+    delay(500);
 
     // Read and print CCS811 data to serial monitor because it looks cool
 
