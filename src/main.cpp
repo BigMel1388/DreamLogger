@@ -25,7 +25,7 @@ void setup()
     Wire.begin(21, 22); // SDA: GPIO21, SCL: GPIO22
     if (!ccs.begin())
     {
-        Serial.println("Failed to start sensor! Please check your wiring.");
+        Serial.println("Failed to start co2 sensor! Please check your wiring.");
         while (1)
             ;
     }
