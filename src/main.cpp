@@ -1,4 +1,4 @@
-
+// I hate niggers
 // Library includes
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
